@@ -6,20 +6,7 @@ import SalesNotification from './components/SalesNotification';
 import BonusSection from './components/BonusSection';
 import TestimonialsSection from './components/TestimonialsSection';
 import AuthorSection from './components/AuthorSection';
-import { FEATURES } from './constants';
-
-const App: React.FC = () => {
-  const scrollToOffers = () => {
-    if (typeof window !== 'undefined' && (window as any).fbq) {
-      (window as any).fbq('track', 'ViewContent');
-    }
-    document.getElementById('ofertas')?.scrollIntoView({ behavior: 'smooth' });
-  };
-
-  const getCurrentDate = () => {
-    const today = new Date();
-    return today.toLocaleDateString('pt-BR');
-  };
+import { FEATURES } from './constants
 
   const MONTH_COVERS = [
     { name: 'Janeiro', url: 'https://i.imgur.com/904DX13.png' },
